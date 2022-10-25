@@ -1,0 +1,15 @@
+@import 'colors';
+@import 'dimensions';
+
+.my-plan-page {
+  max-width: $max-page-width;
+  margin: 20px auto;
+
+  .text-item {
+    .title {
+      font-weight: bold;
+      font-size: large;
+      color: $theme-color;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@import 'colors';
+@import 'dimensions';
+
+.homepage.user {
+  max-width: $max-page-width;
+  margin: 20px auto;
+
+  .categories-root {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    border-bottom: solid 1px;
+    margin-bottom: 20px;
+
+    &.showing {
+      max-height: 100%;
+    }
+
+    &.hidden {
+      max-height: calc(1.2em + 40px);
+    }
+
+    button {
+      white-space: nowrap;
+      align-self: flex-start;
+    }
+
+    a {
+      white-space: nowrap;
+    }
+
+    .category-container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5px;
+
+      &.level-0 {
+        flex-direction: row;
+
+        >.category-inner-container {
+          flex: 1;
+        }
+      }
+
+      &.level-1 {
+        flex-direction: column;
+      }
+
+      &.level-2 {
+        flex-direction: row;
+
+        a {
+          padding: 5px;
+          border: dotted 1px;
+        }
+      }
+
+      .category-inner-container {
+        margin: 10px;
+      }
+
+      .category-children {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+    }
+  }
+
+  .products {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px;
+
+    .product-card {
+      margin: 0 5px;
+    }
+  }
+
+  .category-row {
+    border-radius: 3px;
+    margin-left: 20px;
+
+    &:nth-child(odd) {
+      background-color: $theme-color;
+    }
+    &:nth-child(even) {
+      background-color: $grey-color;
+    }
+  }
+
+  .category {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .showall {
+    background-color: $grey-color;
+    color: $heading-color;
+    border: 1px solid $heading-color;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-top: auto;
+    margin-left: auto;
+  }
+}

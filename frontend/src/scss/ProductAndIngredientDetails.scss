@@ -1,0 +1,314 @@
+@import 'colors';
+@import 'dimensions';
+
+.product-details-container{
+  display: flex;
+  flex-direction: row;
+  max-width: $max-page-width;
+  margin: 20px auto;
+
+  .product-details-container-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: 20px;
+    padding: 15px;
+
+    .product-info {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+
+      .product-image-container {
+        padding-right: 20px;
+
+        .main-image {
+          .product-image {
+            width: 300px;
+            height: 300px;
+          }
+        }
+
+        .other-images {
+          display: flex;
+          flex-direction: row;
+          width: 300px;
+          overflow-x: scroll;
+          overflow-y: none;
+          margin-top: 5px;
+          padding: 5px;
+
+          .product-image {
+            width: 60px;
+            height: 60px;
+            margin: 0 2px;
+            border: solid 1px $grey-color;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .product-info-text {
+        font-weight: bold;
+
+        .text-item {
+          margin-bottom: 15px;
+
+          &.name {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            .inner-flex {
+              flex: 1;
+            }
+          }
+
+          &.description {
+            font-weight: normal;
+
+            .content {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              text-align: justify;
+
+              &.hidden {
+                line-height: 1.4em;
+                height: 7em;
+              }
+
+              &.show {
+                line-height: 1.4em;
+                height: 100%;
+              }
+            }
+
+            .read-more-button {
+              margin-top: 10px;
+              color: $theme-color;
+              border-radius: 3px;
+              cursor: pointer;
+            }
+            .read-more-button:hover {
+              text-decoration: underline;
+            }
+          }
+
+          .title {
+            font-weight: bold;
+            font-size: large;
+            color: $theme-color;
+          }
+        }
+      }
+
+      .certified-box{
+        padding: 5px;
+        background-color: $theme-color;
+        color: white;
+        font-size: large;
+        font-weight: 600;
+      }
+    }
+
+    .ingredient-list {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: rgba(233, 231, 231, 0.895);
+      border-radius: 10px;
+
+      .heading {
+        font-size: 1.6em;
+        font-weight: bold;
+        color: white;
+      }
+
+      .name, .description {
+        margin: 10px 0;
+        padding: 5px;
+        height: calc(1.4em + 9px);
+        line-height: 1.4em;
+        background-color: rgba(233, 231, 231, 0.895);
+        overflow: hidden;
+        border-radius: 10px;
+
+        a {
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .name-list {
+        flex: 1;
+        margin-right: 20px;
+        padding: 20px;
+        background-color: $theme-color;
+        border-radius: 10px;
+      }
+
+      .description-list {
+        flex: 2;
+        padding: 20px;
+        background-color: $theme-color;
+        border-radius: 10px;
+
+      }
+    }
+
+    .ingredient-table {
+      border: 2px solid $theme-color;
+      border-radius: 3px;
+      padding: 5px 10px;
+    }
+  }
+
+  .product-details-container-noproduct{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 180px;
+    margin-left: 40px;
+
+    .score-container {
+      margin: 10px 0;
+      text-align: center;
+
+      .text {
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .text-noproduct{
+        padding: 10px;
+        background-color: lightgrey;
+        border-radius: 5px;
+        color: #c13232;
+        margin-top: 15px
+      }
+    }
+  }
+
+  .product-details-container-right {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 180px;
+    margin-left: 40px;
+
+    .compare-button {
+      background-color: $theme-color;
+      color: white;
+      border: 2px solid $theme-color;
+      border-radius: 3px;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      right: 0
+    }
+
+    .score-container {
+      margin: 10px 0;
+      text-align: center;
+
+      .text {
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+.ingredient-details-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .top {
+    margin: 20px;
+
+    .modalbutton {
+      margin: 20px;
+      margin-left: 0px;
+    }
+  }
+
+  button {
+    background-color: $theme-color;
+    color: white;
+    font-size: $scorecalculator-size;
+    border-radius: 3px;
+    border: 2px solid $theme-color;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .effects {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .effects-list {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    background-color: $grey-color;
+    border-radius: 10px;
+
+    .heading {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: white;
+    }
+
+    .name, .type, .score{
+      margin: 10px 0;
+      padding: 5px;
+      width: auto;
+      height: calc(2.8em + 10px);
+      line-height: 1.4em;
+      background-color: $grey-color;
+      position: relative;
+      border-radius: 10px;
+      
+      a {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    // .score {
+    //   width: fit-content;
+    // }
+
+    .name-list {
+      flex: 3;
+      margin-right: 20px;
+      padding: 20px;
+      background-color: $theme-color;
+      border-radius: 10px;
+    }
+
+    .type-list {
+      flex: 3;
+      margin-right: 20px;
+      padding: 20px;
+      background-color: $theme-color;
+      border-radius: 10px;
+    }
+    .score-list {
+      flex: 1;
+      padding: 20px;
+      background-color: $theme-color;
+      border-radius: 10px;
+    }
+}
+}

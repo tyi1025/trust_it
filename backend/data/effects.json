@@ -1,0 +1,79 @@
+[
+  {
+    "_id": "H350",
+    "name": "H350: May cause cancer",
+    "description": "May cause cancer",
+    "effectType": "cancer",
+    "score": 10
+  },
+  {
+    "_id": "H350i",
+    "name": "H350i: May cause cancer by inhalation",
+    "description": "May cause cancer by inhalation",
+    "effectType": "cancer",
+    "score": 10
+  },
+  {
+    "_id": "H351",
+    "name": "H351: Suspected of causing cancer",
+    "description": "Suspected of causing cancer",
+    "effectType": "cancer",
+    "score": 5
+  },
+  {
+    "_id": "H400",
+    "name": "H400: Very toxic to aquatic life",
+    "description": "Very toxic to aquatic life",
+    "effectType": "environment",
+    "score": 9
+  },
+  {
+    "_id": "H401",
+    "name": "H401: Toxic to aquatic life",
+    "description": "Toxic to aquatic life",
+    "effectType": "environment",
+    "score": 7
+  },
+  {
+    "_id": "H402",
+    "name": "H402: Harmful to aquatic life",
+    "description": "Harmful to aquatic life",
+    "effectType": "environment",
+    "score": 5
+  },
+  {
+    "_id": "H410",
+    "name": "H410: Very toxic to aquatic life with long lasting effects",
+    "description": "Very toxic to aquatic life with long lasting effects",
+    "effectType": "environment",
+    "score": 10
+  },
+  {
+    "_id": "H411",
+    "name": "H411: Toxic to aquatic life with long lasting effects",
+    "description": "Toxic to aquatic life with long lasting effects",
+    "effectType": "environment",
+    "score": 8
+  },
+  {
+    "_id": "H412",
+    "name": "H412: Harmful to aquatic life with long lasting effects",
+    "description": "Harmful to aquatic life with long lasting effects",
+    "effectType": "environment",
+    "score": 6
+  },
+  {
+    "_id": "H413",
+    "name": "H413: May cause long lasting harmful effects to aquatic life",
+    "description": "May cause long lasting harmful effects to aquatic life",
+    "effectType": "environment",
+    "score": 5
+  },
+  {
+    "_id": "H420",
+    "name": "H420: Harms public health and the environment by destroying ozone in the upper atmosphere",
+    "description": "Harms public health and the environment by destroying ozone in the upper atmosphere",
+    "effectType": "environment",
+    "score": 5
+  }
+]

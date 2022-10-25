@@ -1,0 +1,125 @@
+{
+  "effects": [{
+    "_id": "effect1",
+    "name": "Test Effect 1",
+    "description": "Description of Test Effect 1",
+    "effectType": "cancer",
+    "score": 5
+  }, {
+    "_id": "effect2",
+    "name": "Test Effect 2",
+    "description": "Description of Test Effect 2",
+    "effectType": "allergy",
+    "score": 5
+  }],
+
+  "ingredients": [{
+    "_id": "ing1",
+    "name": "Ingredient 1",
+    "description": "Ingredient 1 description",
+    "effects": [{ "_id": "effect1" }]
+  }, {
+    "_id": "ing2",
+    "name": "Ingredient 2",
+    "description": "Ingredient 2 description",
+    "effects": [{ "_id": "effect1" }, { "_id": "effect2" }]
+  }, {
+    "_id": "ing3",
+    "name": "Ingredient 3",
+    "description": "Ingredient 3 description",
+    "effects": [{ "_id": "effect1" }, { "_id": "effect2" }]
+  }, {
+    "_id": "ing4",
+    "name": "Ingredient 4",
+    "description": "Ingredient 4 description",
+    "effects": [{ "_id": "effect2" }]
+  }, {
+    "_id": "ing5",
+    "name": "Ingredient 5",
+    "description": "Ingredient 5 description",
+    "effects": []
+  }],
+
+  "categories": [{
+    "_id": "cat1",
+    "name": "Category 1",
+    "description": "Category 1 description"
+  }, {
+    "_id": "cat2",
+    "name": "Category 2",
+    "description": "Category 2 description",
+    "isLeaf": true
+  }, {
+    "_id": "cat3",
+    "name": "Category 3",
+    "description": "Category 3 description",
+    "isLeaf": true
+  }, {
+    "_id": "cat1_1",
+    "name": "Category 1 - 1",
+    "description": "Category 1 - 1 description",
+    "parent": { "_id": "cat1" },
+    "isLeaf": true
+  }, {
+    "_id": "cat1_2",
+    "name": "Category 1 - 2",
+    "description": "Category 1 - 2 description",
+    "parent": { "_id": "cat1" }
+  }, {
+    "_id": "cat1_2_1",
+    "name": "Category 1 - 2 -1",
+    "description": "Category 1 - 2 -1 description",
+    "parent": { "_id": "cat1_2" },
+    "isLeaf": true
+  }],
+
+  "manufacturers": [{
+    "_id": "man1",
+    "name": "Manufacturer 1",
+    "username": "man1",
+    "password": "$2b$10$p9kknqyR9TlIkSCdfHGD9.t2WbXSwJYWg6JxdSSDiUbJqw/evZuoG"
+  }, {
+    "_id": "man2",
+    "name": "Manufacturer 2",
+    "username": "man2",
+    "password": "$2b$10$p9kknqyR9TlIkSCdfHGD9.t2WbXSwJYWg6JxdSSDiUbJqw/evZuoG"
+  }, {
+    "_id": "man3",
+    "name": "Manufacturer 3",
+    "username": "man3",
+    "password": "$2b$10$p9kknqyR9TlIkSCdfHGD9.t2WbXSwJYWg6JxdSSDiUbJqw/evZuoG"
+  }],
+
+  "products": [{
+    "name": "Product 1",
+    "manufacturer": { "_id": "man1" },
+    "description": "Product 1 description",
+    "ingredients": [{ "_id": "ing1" }, { "_id": "ing2" }],
+    "category": { "_id": "cat2" },
+    "barcode": "12345"
+  }, {
+    "name": "Product 2",
+    "manufacturer": { "_id": "man2" },
+    "description": "Product 2 description",
+    "ingredients": [
+      { "_id": "ing1" }, { "_id": "ing2" },
+      { "_id": "ing3" }, { "_id": "ing4" }
+    ],
+    "category": { "_id": "cat3" },
+    "barcode": "54321"
+  }, {
+    "name": "Product 3",
+    "manufacturer": { "_id": "man2" },
+    "description": "Product 3 description",
+    "ingredients": [{ "_id": "ing1" }, { "_id": "ing5" }],
+    "category": { "_id": "cat1_1" },
+    "barcode": "123"
+  }, {
+    "name": "Product 4",
+    "manufacturer": { "_id": "man3" },
+    "description": "Product 4 description",
+    "ingredients": [],
+    "category": { "_id": "cat1_2_1" },
+    "barcode": "122"
+  }]
+}

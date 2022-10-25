@@ -1,0 +1,48 @@
+@import 'colors';
+@import 'dimensions';
+
+.about-us{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $max-page-width;
+  margin: auto;
+
+  .content{
+    
+    margin: 50px;
+    text-align: center;
+  }
+  .desc {
+    color: rgb(41, 40, 40);
+    text-shadow: 1px;
+  }
+  .images-box {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    background-color: $theme-color;
+
+    .image-name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      padding: 5px;
+      background-color: $theme-color;
+
+      .member {
+        margin: 20px;
+        height: 200px;
+        width:200;
+      }
+      .name {
+        font: bold;
+        background-color: $grey-color;
+      }
+    }
+  }
+}
+

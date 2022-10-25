@@ -1,0 +1,48 @@
+@import 'colors';
+
+.comparison-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+
+  .product-column {
+    width: 200px;
+    border: solid 1px;
+    border-left: none;
+
+    &:first-child {
+      border-left: solid 1px;
+    }
+
+    .product-field {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      padding: 10px;
+
+      &:nth-child(even) {
+        background-color: $theme-color;
+      }
+
+      &.image {
+        height: 180px;
+        background-color: $theme-color ;
+
+        .product-image {
+          width: 160px;
+          height: 160px;
+        }
+      }
+
+      &.name, &.manufacturer {
+        height: 100px;
+      }
+
+      &.ingredients {
+        height: 200px;
+      }
+    }
+  }
+}

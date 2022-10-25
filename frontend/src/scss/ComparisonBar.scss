@@ -1,0 +1,54 @@
+@import 'colors';
+
+.comparison-bar {
+  display: flex;
+  position: fixed;
+  justify-content: flex-start;
+  align-items: center;
+  bottom: 0;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 2px -2px 7px 1px rgba(0,0,0,0.28);
+  background-color: white;
+
+  .product-card-container {
+    position:relative;
+
+    .product-card {
+      margin: 5px;
+    }
+
+    .delete-btn {
+      position: absolute;
+      top: -4px;
+      left: 0px;
+      width: 8px;
+      height: 8px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+  }
+
+  button {
+    margin-left: 10px;
+
+    a {
+      color: white !important;
+    }
+  }
+
+  .product-card {
+    width: 130px;
+
+    .product-image {
+      width: 130px;
+      height: 130px;
+    }
+
+    .name {
+      padding: 8px;
+      font-size: 0.8em;
+      color: $theme-color;
+    }
+  }
+}

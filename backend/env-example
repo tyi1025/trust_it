@@ -1,0 +1,4 @@
+MONGO_URI="mongodb://root:example@0.0.0.0:27017?retryWrites=true&writeConcern=majority"
+PORT=3001
+JWT_KEY="fTkA!LRiqsL!xL&$zxnzV$qdoPH2t%GhicaCQi2sfkDXRDxsW5bJ&79k!oc7%KL7"
+STRIPE_SECRET_KEY="sk_test_51LNLVNDzrQdz9eieQfubMZb2z8bxll9ApxXCZB8soJcbIxUWvj4uz3EAWC3lbgQQSkVmocIDmlMOcq4z63i4T5lV00DxTZ9BlH"

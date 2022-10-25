@@ -1,0 +1,46 @@
+@import 'colors';
+@import 'dimensions';
+@import 'PurchasePage.scss';
+
+.start-trial {
+  .flex-box {
+    @include flex-list-row;
+  }
+  .box{
+    @include box;
+    width: 700px;
+    padding: 10px;
+    height: 500px;
+  }
+  #new-shape {
+    @include shape;
+    width: 600px;
+  }
+  #new-shape:before {
+    border-top: 40px solid $theme-color;
+    top: 100px;
+    @include shape-before;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+  }
+  .desc {
+      margin-top: 70px;
+
+      .desc-ul{
+        padding-left: 0px;
+
+        .desc-ul-begin{
+          text-align: center;
+        }
+      }
+  }
+  button {
+    margin-top: 20px;
+    background-color: $theme-color;
+    color: white;
+    font-size: $scorecalculator-size;
+    border: 2px solid $theme-color;
+    border-radius: 3px;
+    padding: 10px;
+  }
+}

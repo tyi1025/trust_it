@@ -1,0 +1,41 @@
+@import 'colors';
+@import 'dimensions';
+
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: $max-page-width;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      padding: 5px;
+      align-items: center;
+      justify-content: center;
+      
+      .title {
+        color: $theme-color;
+      }
+      .text {
+        text-align: center;
+        .subtext {
+          text-indent: 2em;
+        }
+      }
+
+      .link{
+        text-decoration: underline;
+        color: $theme-color;
+      }
+
+      &.selected{
+        align-items: center;
+        justify-content: center;
+      }
+    }
+}
+

@@ -1,0 +1,96 @@
+@import 'colors';
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  box-shadow: 0 0 7px 1px rgba(0,0,0,0.17);
+  border-radius: 10px;
+  background-color: white;
+
+  .product-image {
+    width: 260px;
+    height: 260px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: contain;
+    padding: 5px;
+  }
+
+  .name {
+    flex: 1;
+    padding: 10px;
+    line-height: 1.2em;
+    // min-height: 4.8em;
+  }
+
+  .score {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 10px;
+    font-size: 20px;
+
+    &.none {
+      background-color: lightgrey;
+    }
+
+    &.low {
+      background-color: $theme-color;
+    }
+
+    &.medium {
+      background-color: yellow;
+    }
+
+    &.high {
+      background-color: red;
+    }
+  }
+
+  .certified-container {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 3px;
+    font-size: 0.8em;
+    background-color: $theme-color;
+    border-radius: 5px;
+
+    .certified {
+      font-size: 1.2em;
+      margin-right: 5px;
+    }
+  }
+
+  .compare-button {
+    position: absolute;
+    top: 255px;
+    right: 5px;
+    padding: 3px;
+    transform: translateY(-100%);
+    font-size: 0.8em;
+    border-radius: 5px;
+
+    .add {
+      font-size: 1.2em;
+      margin-right: 5px;
+    }
+  }
+
+  .apply-certificate-checkbox {
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    input {
+      margin-right: 5px;
+    }
+  }
+}

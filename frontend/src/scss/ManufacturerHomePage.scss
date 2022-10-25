@@ -1,0 +1,84 @@
+@import 'dimensions';
+@import 'colors';
+
+.manufacturer-home-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: $max-page-width;
+  margin: 20px auto;
+
+  &.no-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - $header-height - $footer-height);
+    margin: 0 auto;
+    font-size: 2em;
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 2em;
+    }
+  }
+
+  .filter-row {
+    display: flex;
+    flex-direction: row;
+
+    .product-filter {
+      flex: 1;
+    }
+
+    .button-container {
+      button {
+        margin: 10px;
+      }
+    }
+  }
+
+  .product-grid {
+    margin-bottom: 100px;
+  }
+
+  .page-index {
+    display: flex;
+    flex-direction: row;
+
+    .button {
+      color: $grey-color;
+      margin: 0 10px;
+    }
+
+    a .button {
+      color: black;
+    }
+  }
+
+  .submit-application-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .spinner{
+    color: $theme-color;
+    align-self: center;
+  }
+  .text{
+    background-color: $theme-color;
+    max-width: 1200px;
+    font-size: larger;
+    color: white;
+    align-self: center;
+  }
+}

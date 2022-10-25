@@ -1,0 +1,45 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-prod": "nodemon app.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createProduct": "node scripts/createProduct.js",
+    "importDummy": "node scripts/importDummyData.js",
+    "importData": "node scripts/importData.js",
+    "calculateScores": "node scripts/calculateScores.js",
+    "export": "node scripts/export.js",
+    "import": "node scripts/import.js",
+    "approveCertificates": "node scripts/approveCertificates.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-jwt": "^7.7.5",
+    "gridfs-stream": "^1.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "loadash": "^1.0.0",
+    "mongodb": "^4.8.0",
+    "mongoose": "^6.3.8",
+    "mongoose-autopopulate": "^0.16.1",
+    "multer-gridfs-storage": "^5.0.2",
+    "puppeteer": "^15.3.2",
+    "stripe": "^9.14.0",
+    "swagger-jsdoc": "^6.2.1",
+    "swagger-ui-express": "^4.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "nodemon": "^2.0.19"
+  }
+}

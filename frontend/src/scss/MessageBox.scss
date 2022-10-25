@@ -1,0 +1,46 @@
+@import 'colors';
+
+.message-box {
+  width: fit-content;
+  margin: auto;
+  margin-top: 3px;
+  padding: 5px 5px;
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  .mb-2{
+    padding: 5px;
+    margin: 0;
+    min-width: fit-content;
+
+    .fade{
+      height: fit-content;
+      width: 300px;
+      word-wrap: break-word;
+    }
+
+    .toast-header{
+      color: $theme-color;
+      .btn-close{
+        display: none;
+      }
+    }
+
+    .toast-body{
+      opacity: 0.5;
+      text-align: center;
+    }
+  }
+
+  button.delete-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
