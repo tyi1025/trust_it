@@ -1,3 +1,8 @@
+# Co-authors
+[yulapshun](https://github.com/yulapshun)
+[alessid](https://github.com/alessid)?
+[AanchalChugh](https://github.com/AanchalChugh)
+
 # Backend Development Setup
 1. Make sure MongoDB is install and running locally
 2. Change working directory to `backend`
