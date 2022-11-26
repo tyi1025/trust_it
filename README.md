@@ -1,6 +1,6 @@
 # Co-authors
 [yulapshun](https://github.com/yulapshun)
-[alessid](https://github.com/alessid)?
+[aledavide96](https://github.com/aledavide96)
 [AanchalChugh](https://github.com/AanchalChugh)
 
 # Backend Development Setup
